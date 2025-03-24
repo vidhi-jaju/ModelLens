@@ -1,0 +1,9 @@
+streamlit
+pandas
+numpy
+scikit-learn
+joblib
+plotly
+shap
+matplotlib  # SHAP depends on Matplotlib for some plots
+seaborn  # Optional, used in earlier pages

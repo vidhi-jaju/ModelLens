@@ -1,0 +1,51 @@
+CustomerID,Age,Gender,Tenure,MonthlyCharges,TotalCharges,InternetService,Contract,PaymentMethod,Churn
+1001,25,Male,1,50,500,Fiber Optic,Monthly,Credit Card,0
+1002,40,Female,12,60,720,DSL,Yearly,Bank Transfer,1
+1003,35,Male,24,70,1680,No Internet,Two-Year,Cash,0
+1004,50,Female,36,80,2880,Fiber Optic,Monthly,Credit Card,1
+1005,23,Male,48,90,4320,DSL,Yearly,Bank Transfer,0
+1006,45,Female,60,100,6000,No Internet,Two-Year,Cash,0
+1007,33,Male,72,110,7920,Fiber Optic,Monthly,Credit Card,1
+1008,38,Female,84,120,10080,DSL,Yearly,Bank Transfer,0
+1009,29,Male,96,130,12480,No Internet,Two-Year,Cash,1
+1010,41,Female,108,140,15120,Fiber Optic,Monthly,Credit Card,0
+1011,25,Male,1,50,500,DSL,Yearly,Bank Transfer,0
+1012,40,Female,12,60,720,No Internet,Two-Year,Cash,1
+1013,35,Male,24,70,1680,Fiber Optic,Monthly,Credit Card,0
+1014,50,Female,36,80,2880,DSL,Yearly,Bank Transfer,1
+1015,23,Male,48,90,4320,No Internet,Two-Year,Cash,0
+1016,45,Female,60,100,6000,Fiber Optic,Monthly,Credit Card,0
+1017,33,Male,72,110,7920,DSL,Yearly,Bank Transfer,1
+1018,38,Female,84,120,10080,No Internet,Two-Year,Cash,0
+1019,29,Male,96,130,12480,Fiber Optic,Monthly,Credit Card,1
+1020,41,Female,108,140,15120,DSL,Yearly,Bank Transfer,0
+1021,25,Male,1,50,500,No Internet,Two-Year,Cash,0
+1022,40,Female,12,60,720,Fiber Optic,Monthly,Credit Card,1
+1023,35,Male,24,70,1680,DSL,Yearly,Bank Transfer,0
+1024,50,Female,36,80,2880,No Internet,Two-Year,Cash,1
+1025,23,Male,48,90,4320,Fiber Optic,Monthly,Credit Card,0
+1026,45,Female,60,100,6000,DSL,Yearly,Bank Transfer,0
+1027,33,Male,72,110,7920,No Internet,Two-Year,Cash,1
+1028,38,Female,84,120,10080,Fiber Optic,Monthly,Credit Card,0
+1029,29,Male,96,130,12480,DSL,Yearly,Bank Transfer,1
+1030,41,Female,108,140,15120,No Internet,Two-Year,Cash,0
+1031,25,Male,1,50,500,Fiber Optic,Monthly,Credit Card,0
+1032,40,Female,12,60,720,DSL,Yearly,Bank Transfer,1
+1033,35,Male,24,70,1680,No Internet,Two-Year,Cash,0
+1034,50,Female,36,80,2880,Fiber Optic,Monthly,Credit Card,1
+1035,23,Male,48,90,4320,DSL,Yearly,Bank Transfer,0
+1036,45,Female,60,100,6000,No Internet,Two-Year,Cash,0
+1037,33,Male,72,110,7920,Fiber Optic,Monthly,Credit Card,1
+1038,38,Female,84,120,10080,DSL,Yearly,Bank Transfer,0
+1039,29,Male,96,130,12480,No Internet,Two-Year,Cash,1
+1040,41,Female,108,140,15120,Fiber Optic,Monthly,Credit Card,0
+1041,25,Male,1,50,500,DSL,Yearly,Bank Transfer,0
+1042,40,Female,12,60,720,No Internet,Two-Year,Cash,1
+1043,35,Male,24,70,1680,Fiber Optic,Monthly,Credit Card,0
+1044,50,Female,36,80,2880,DSL,Yearly,Bank Transfer,1
+1045,23,Male,48,90,4320,No Internet,Two-Year,Cash,0
+1046,45,Female,60,100,6000,Fiber Optic,Monthly,Credit Card,0
+1047,33,Male,72,110,7920,DSL,Yearly,Bank Transfer,1
+1048,38,Female,84,120,10080,No Internet,Two-Year,Cash,0
+1049,29,Male,96,130,12480,Fiber Optic,Monthly,Credit Card,1
+1050,41,Female,108,140,15120,Fiber Optic,Monthly,Credit Card,0
