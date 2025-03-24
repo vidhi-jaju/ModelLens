@@ -63,7 +63,7 @@ ModelLens/
 
 ### 🔧 **Setup the Environment**  
 ```bash
-git clone https://github.com/your-username/ModelLens.git
+git clone https://github.com/vidhi-jaju/ModelLens.git
 cd ModelLens
 pip install -r requirements.txt
 ```
