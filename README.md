@@ -42,8 +42,8 @@ ModelLens/
 │── app.py                  # Main Streamlit app
 │── pages/
 │   ├── 1_data_exploration.py  # Data exploration and visualization
-│   ├── 2_evidential_ai.py     # Concept & Data Drift analysis
-│   ├── 3_model_training.py    # Model training & prediction
+│   ├── 2_model_training.py    # Concept & Data Drift analysis
+│   ├── 3_evidential_ai.py     # Model training & prediction
 │   ├── 4_shapley_values.py    # SHAP-based explainability & accuracy
 │── requirements.txt         # Required dependencies
 │── README.md                # Project Documentation
@@ -63,7 +63,7 @@ ModelLens/
 
 ### 🔧 **Setup the Environment**  
 ```bash
-git clone https://github.com/vidhi-jaju/ModelLens.git
+git clone https://github.com/your-username/ModelLens.git
 cd ModelLens
 pip install -r requirements.txt
 ```
@@ -113,5 +113,6 @@ git checkout -b feature-branch
 git commit -m "Add a cool new feature"
 git push origin feature-branch
 ```
+
 
 🚀 **Explore, Explain, and Evaluate AI with ModelLens!** 🎯
