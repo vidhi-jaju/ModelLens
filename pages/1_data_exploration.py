@@ -8,23 +8,15 @@ import numpy as np
 st.set_page_config(page_title="Data Exploration", layout="wide")
 st.title("🔍 Data Exploration & Visualization")
 
-# Load dataset
-dataset_dir = "datasets"
-os.makedirs(dataset_dir, exist_ok=True)
-available_datasets = [f for f in os.listdir(dataset_dir) if f.endswith(".csv")]
-
-uploaded_file = st.sidebar.file_uploader("Upload a CSV file", type=["csv"])
-selected_dataset = st.sidebar.selectbox("Or select a pre-stored dataset", ["None"] + available_datasets)
-
-if uploaded_file:
-    df = pd.read_csv(uploaded_file)
-    st.success("✅ Uploaded dataset loaded successfully!")
-elif selected_dataset != "None":
-    df = pd.read_csv(os.path.join(dataset_dir, selected_dataset))
-    st.success(f"✅ Pre-stored dataset **{selected_dataset}** loaded successfully!")
-else:
-    st.warning("⚠️ Please upload or select a dataset.")
+# Ensure dataset selection persists
+if "selected_dataset" not in st.session_state or not st.session_state.selected_dataset:
+    st.error("⚠️ No dataset selected! Please choose one on the landing page.")
     st.stop()
+
+dataset_path = os.path.join("datasets", st.session_state.selected_dataset)
+df = pd.read_csv(dataset_path)
+
+st.success(f"✅ Loaded dataset: **{st.session_state.selected_dataset}**")
 
 # Dataset Preview
 st.write("### 📜 Dataset Preview")
@@ -37,10 +29,14 @@ st.write(df.describe())
 # Missing Values
 st.write("### ❗ Missing Values in Dataset")
 missing_values = df.isnull().sum()
-if missing_values.sum() == 0:
+missing_percentage = (missing_values / len(df)) * 100
+missing_data = pd.DataFrame({"Missing Values": missing_values, "Percentage": missing_percentage})
+missing_data = missing_data[missing_data["Missing Values"] > 0]
+
+if missing_data.empty:
     st.success("✅ No missing values found in the dataset!")
 else:
-    st.write(missing_values[missing_values > 0])
+    st.write(missing_data)
 
 # Visualization Options
 st.write("### 📈 Data Visualizations")
@@ -60,20 +56,27 @@ if numeric_cols:
 
     # Pair Plot (Feature Relationships)
     st.write("### 🔗 Pair Plot (Feature Relationships)")
-    fig_pair = px.scatter_matrix(df, dimensions=numeric_cols, title="🔗 Pair Plot")
-    st.plotly_chart(fig_pair, use_container_width=True)
+    if len(numeric_cols) > 5:
+        st.warning("⚠️ Too many numeric columns! Select a smaller subset for pair plots.")
+    else:
+        fig_pair = px.scatter_matrix(df, dimensions=numeric_cols, title="🔗 Pair Plot")
+        st.plotly_chart(fig_pair, use_container_width=True)
 
     # Correlation Heatmap
     st.write("### 🔥 Correlation Heatmap")
     correlation_matrix = df[numeric_cols].corr()
-    fig_heatmap = ff.create_annotated_heatmap(
-        z=correlation_matrix.values,
-        x=list(correlation_matrix.columns),
-        y=list(correlation_matrix.index),
-        annotation_text=np.round(correlation_matrix.values, 2),
-        colorscale="Blues",
-    )
-    st.plotly_chart(fig_heatmap, use_container_width=True)
+
+    if len(numeric_cols) > 10:
+        st.warning("⚠️ Too many numeric columns! Select a smaller subset for correlation analysis.")
+    else:
+        fig_heatmap = ff.create_annotated_heatmap(
+            z=correlation_matrix.values,
+            x=list(correlation_matrix.columns),
+            y=list(correlation_matrix.index),
+            annotation_text=np.round(correlation_matrix.values, 2),
+            colorscale="Blues",
+        )
+        st.plotly_chart(fig_heatmap, use_container_width=True)
 
 else:
     st.warning("⚠️ No numeric columns available for visualization.")
