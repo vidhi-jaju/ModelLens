@@ -1,5 +1,6 @@
 # **ModelLens**  
 🚀 *A Clear View Into AI Predictions and Accuracy*  
+Live Demo - [Click Here](https://modellens.streamlit.app/)
 
 ---  
 
@@ -116,3 +117,5 @@ git push origin feature-branch
 
 
 🚀 **Explore, Explain, and Evaluate AI with ModelLens!** 🎯
+
+
