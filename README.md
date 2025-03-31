@@ -105,16 +105,20 @@ Evaluates how well the model performs on the selected dataset.
 ⚡ **User-Friendly Interface** – No coding required, just upload and analyze!  
 
 ---
+![img](https://github.com/vidhi-jaju/ModelLens/blob/bd326adab6a8010541f7f263e776a24237090f4c/images/1.png)
 
-## 🤝 **Contributing**  
-Want to improve **ModelLens**? Feel free to fork the repo, submit PRs, and suggest features!  
+![img](https://github.com/vidhi-jaju/ModelLens/blob/bd326adab6a8010541f7f263e776a24237090f4c/images/2.png)
 
-```bash
-git checkout -b feature-branch
-git commit -m "Add a cool new feature"
-git push origin feature-branch
-```
+![img](https://github.com/vidhi-jaju/ModelLens/blob/bd326adab6a8010541f7f263e776a24237090f4c/images/3.png)
 
+![img](https://github.com/vidhi-jaju/ModelLens/blob/bd326adab6a8010541f7f263e776a24237090f4c/images/4.png)
+
+![img](https://github.com/vidhi-jaju/ModelLens/blob/bd326adab6a8010541f7f263e776a24237090f4c/images/5.png)
+
+![img](https://github.com/vidhi-jaju/ModelLens/blob/bd326adab6a8010541f7f263e776a24237090f4c/images/6.png)
+
+## **Deployed on streamlit community cloud** 
+![img](https://github.com/vidhi-jaju/ModelLens/blob/bd326adab6a8010541f7f263e776a24237090f4c/images/7.png)
 
 🚀 **Explore, Explain, and Evaluate AI with ModelLens!** 🎯
 
